@@ -23,3 +23,8 @@ dt(
 
 # some weird macro for fixing html. I forget what it does
 macro:ggqqg_IDjq5000@q
+
+# modeline
+# :vim ts=4
+# ^^ you can set things in vim like that.
+# don't forget to set modeline in vimrc
