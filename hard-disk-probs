@@ -1,0 +1,10 @@
+# check cables, and that they are the right ones
+
+# badblocks
+# for destructive write tests on new hds
+badblocks -svw /dev/<devname>
+# for non-destructive write tests on hd's with data
+badblocks -svn /dev/<devname>
+
+# reboot to fsck
+shutdown -F now
