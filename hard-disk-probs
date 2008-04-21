@@ -7,4 +7,4 @@ badblocks -svw /dev/<devname>
 badblocks -svn /dev/<devname>
 
 # reboot to fsck
-shutdown -F now
+shutdown -hF now #s/h/r/ for reboot
