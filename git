@@ -1,0 +1,2 @@
+# rename branch
+git branch -m oldname newname
