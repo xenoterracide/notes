@@ -28,3 +28,6 @@ macro:ggqqg_IDjq5000@q
 # :vim ts=4
 # ^^ you can set things in vim like that.
 # don't forget to set modeline in vimrc
+
+#to use vim to convert crlf to lf
+:set ff=unix | w
