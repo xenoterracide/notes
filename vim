@@ -31,3 +31,7 @@ macro:ggqqg_IDjq5000@q
 
 #to use vim to convert crlf to lf
 :set ff=unix | w
+
+# paste visual search into vim : buffer
+C-r"
+# also know as ctrl+r "
