@@ -35,3 +35,15 @@ macro:ggqqg_IDjq5000@q
 # paste visual search into vim : buffer
 C-r"
 # also know as ctrl+r "
+
+# make a map on visual g/ it should copy highlighted text into buffer and 
+# escape it.
+# written by godlygeek
+function SearchSelected() 
+	let save=@" 
+	norm! gvy 
+	let @/='\V'.escape(@",'\') 
+	let @"=save 
+endfunction 
+ 
+:vnoremap g/ <ESC>:call SearchSelected()<CR>
