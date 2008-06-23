@@ -8,7 +8,7 @@
 
 # to paste 0 register. also known as forget about what I deleted and remember 
 # my yank. don't forget to look up register's
-0p
+"0p
 
 # add space to end of line that doesn't end with >
 :s/\([^>]\)$/\1 /
