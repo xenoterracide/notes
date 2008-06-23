@@ -22,6 +22,13 @@ dt"
 # search replace from here to end of file
 .,$s/.../.../g
 
+# substitute append
+s/.../&.../
+s/\(foo\)/\1bar/ # more powerfull you can retrive them with \1 \2 etc
+
+# substitute prepend
+s/.../...&/
+
 # some weird macro for fixing html. I forget what it does
 macro:ggqqg_IDjq5000@q
 
