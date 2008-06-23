@@ -15,8 +15,9 @@
 
 # delete up until the occurence of character.
 # dt<char>
-#example
+#examples
 dt(
+dt"
 
 # search replace from here to end of file
 .,$s/.../.../g
@@ -25,9 +26,10 @@ dt(
 macro:ggqqg_IDjq5000@q
 
 # modeline
-# vim:ts=4
+# vim: ts=4:
 # ^^ you can set things in vim like that.
 # don't forget to set modeline in vimrc
+# the colon at the end tells vim where the modeline ends
 
 #to use vim to convert crlf to lf
 :set ff=unix | w
