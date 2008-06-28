@@ -19,6 +19,9 @@
 dt(
 dt"
 
+# delete up to next /* comment
+d/^\s*\/\*
+
 # search replace from here to end of file
 .,$s/.../.../g
 
