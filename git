@@ -1,2 +1,5 @@
 # rename branch
 git branch -m oldname newname
+
+# reset dirty file to HEAD
+git checkout HEAD -- /path/to/file
