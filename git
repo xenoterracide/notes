@@ -3,3 +3,6 @@ git branch -m oldname newname
 
 # reset dirty file to HEAD
 git checkout HEAD -- /path/to/file
+
+# just commit part of a dirty file
+git commit -p
