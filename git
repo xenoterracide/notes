@@ -6,3 +6,6 @@ git checkout HEAD -- /path/to/file
 
 # just commit part of a dirty file
 git add -p
+
+# add a remote branch
+git remote add origin git@github.com:xenoterracide/test.git
