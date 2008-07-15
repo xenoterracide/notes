@@ -1,0 +1,3 @@
+# count the total lines in a directory and all subdirectories ignoring all 
+# hidden files
+find . \( ! -regex '.*/\..*' \) -type f | xargs wc -l
