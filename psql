@@ -1,0 +1,2 @@
+# to use syntax highlighting in psql with vim 
+export PSQL_EDITOR='vim -c "set ft=sql"'
