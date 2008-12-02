@@ -12,3 +12,6 @@ git remote add origin git@github.com:xenoterracide/test.git
 
 # see modified/deleted files without unadded files
 git diff --name-status
+
+# view remote branch
+git show <remote>:/path/to/file
