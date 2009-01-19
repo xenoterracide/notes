@@ -48,6 +48,9 @@ macro:ggqqg_IDjq5000@q
 C-r"
 # also know as ctrl+r "
 
+#paste output of command
+:r !ls
+
 # inserting non keyboard characters
 :digraphs  (to see character maps)
 C-k + (character map)
