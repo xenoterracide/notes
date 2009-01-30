@@ -15,3 +15,6 @@ git diff --name-status
 
 # view remote branch
 git show <remote>:/path/to/file
+
+# reset fast-forward
+git reset --hard HEAD@{1}
