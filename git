@@ -18,3 +18,7 @@ git show <remote>:/path/to/file
 
 # reset fast-forward
 git reset --hard HEAD@{1}
+
+# fire off a patch inline
+git format-patch -1 ea110988 -M --stdout funtoo/funtoo.org | git imap-send
+
