@@ -19,6 +19,8 @@ git show <remote>:/path/to/file
 # reset fast-forward
 git reset --hard HEAD@{1}
 
-# fire off a patch inline
-git format-patch -1 ea110988 -M --stdout funtoo/funtoo.org | git imap-send
+# fire off a patch inline from the top commit of head
+git format-patch -1 -M --stdout regen2/regen2.org | git imap-send
 
+# fire off a patch inline from a certain sha1
+git format-patch -1 <sha1> -M --stdout | git imap-send
