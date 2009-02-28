@@ -22,5 +22,8 @@ git reset --hard HEAD@{1}
 # fire off a patch inline from the top commit of head
 git format-patch -1 -M --stdout regen2/regen2.org | git imap-send
 
+# attach
+git format-patch -1 -m --stdout regen2.org --attach | git imap-send
+
 # fire off a patch inline from a certain sha1
 git format-patch -1 <sha1> -M --stdout | git imap-send
