@@ -1,0 +1,2 @@
+#download a single directory from a website
+wget -r -l1 -np http://glaforge.free.fr/projects/guessencoding/src/com/
