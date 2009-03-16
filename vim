@@ -51,19 +51,12 @@ C-r"
 #paste output of command
 :r !ls
 
+# insert into multiple tabs
+
 # inserting non keyboard characters
 :digraphs  (to see character maps)
 C-k + (character map)
 C-k DG for °
 
-# make a map on visual g/ it should copy highlighted text into buffer and 
-# escape it.
-# written by godlygeek
-function SearchSelected() 
-	let save=@" 
-	norm! gvy 
-	let @/='\V'.escape(@",'\') 
-	let @"=save 
-endfunction 
- 
-:vnoremap g/ <ESC>:call SearchSelected()<CR>
+#remove all whitespace before newlines
+:%s/\s\+$//
