@@ -1,0 +1,2 @@
+# concatenate all files and print filename first
+head -n <highnumber> *
