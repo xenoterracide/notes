@@ -1,2 +1,5 @@
 # to use syntax highlighting in psql with vim 
 export PSQL_EDITOR='vim -c "set ft=sql"'
+
+# to set the search_path in psql an example
+alter user webdev set search_path to "$user",hydra;
