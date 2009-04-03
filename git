@@ -27,3 +27,9 @@ git format-patch -1 -m --stdout regen2.org --attach | git imap-send
 
 # fire off a patch inline from a certain sha1
 git format-patch -1 <sha1> -M --stdout | git imap-send
+
+# show file from earlier commit
+git show HEAD~1:assets/mmo.sql
+
+# cherry-pick tip of other branch
+git cherry-pick <branch>
