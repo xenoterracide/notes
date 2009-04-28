@@ -1,2 +1,5 @@
 # grep notes
 # -B -A -C are used to display lines around matches
+
+# -v to invert the grep, meaning grep -v Manifest will show all lines !  
+# containing Manifest
