@@ -1,0 +1,2 @@
+# pacman equivilant of depclean. damn that's long.
+pacman -R `pacman --Qdtq`
