@@ -3,3 +3,7 @@ head -n <highnumber> *
 
 # check return of last program
 echo $?
+
+# wait and strace a process when it starts.
+
+x=1; while [ $x = 1 ]; do process=`pgrep -u <username>`; if [ $process ]; then x=0; fi; done; strace -vvtf -s 256 -p $process
