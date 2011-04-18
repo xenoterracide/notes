@@ -11,3 +11,7 @@ x=1; while [ $x = 1 ]; do process=`pgrep -u <username>`; if [ $process ]; then x
 # faster delete
 
 /bin/ls -AU|xargs -P10 rm -f
+
+# count inodes in current directory
+
+find -maxdepth 1 -type d | while read -r dir; do printf "%s:\t" "$dir"; find "$dir" | wc -l; done | sort -n -r -k2
