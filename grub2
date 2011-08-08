@@ -1,0 +1,18 @@
+
+# here's a menu entry just cause
+
+menuentry "Arch Linux" {
+insmod raid
+set root=(md0)
+linux /vmlinuz-linux root=/dev/md1 ro
+initrd /initramfs-linux.img
+boot
+}
+
+# for reinstalling grub to mbr
+# don't use --modules or anything else grub-install is smarter than you
+
+grub-install --no-floppy /dev/sda 
+grub-install --no-floppy /dev/sdb
+
+
