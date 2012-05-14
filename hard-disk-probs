@@ -8,3 +8,13 @@ badblocks -svn /dev/<devname>
 
 # reboot to fsck
 shutdown -hF now #s/h/r/ for reboot
+
+# smart checks
+pacman -S smartmontools
+
+smartctl -t short      /dev/<devname>
+smartctl -t conveyance /dev/<devname>
+smartctl -t long       /dev/<devname>
+
+#print out all the drive info
+smartctl -a /dev/<devname>
