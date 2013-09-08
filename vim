@@ -38,6 +38,9 @@ macro:ggqqg_IDjq5000@q
 # modeline
 # vim: ts=4:
 # ^^ you can set things in vim like that.
+
+## show relative path of current file
+:echo expand('%:p')
 # don't forget to set modeline in vimrc
 # the colon at the end tells vim where the modeline ends
 
