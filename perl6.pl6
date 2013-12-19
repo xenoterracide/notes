@@ -1,3 +1,4 @@
+#!/usr/bin/env perl6
 # my perl 6 reference
 use v6; # start everything with
 
