@@ -5,6 +5,9 @@ use v6; # start everything with
 # everything is a class, how do I find out what I can do, sample with array
 
 say Array.^methods.join(', ');
+say Array.HOW.^methods>>.name;
+
+
 
 
 # how do I write a module that exports subroutines
